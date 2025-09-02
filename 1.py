@@ -1,7 +1,7 @@
 import textblob as t
 print("------Welcome all to This Sentiment Analysis Page------")
 user_i=input("Enter the desired passage :\n")
-analysis = TextBlob(user_i)
+analysis = t.TextBlob(user_i)
 print(analysis.sentiment)
 polarity = analysis.sentiment.polarity
 if(polarity>0):
